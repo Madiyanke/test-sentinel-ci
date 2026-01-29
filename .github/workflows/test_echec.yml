@@ -1,0 +1,19 @@
+name: Failing CI Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  test-failure:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run a failing command
+        run: |
+          echo "This step will fail on purpose"
+          exit 1
