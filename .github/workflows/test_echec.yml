@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run a failing command
+      - name: Run a test command
         run: |
-          echo "This step will fail on purpose"
-          exit 1
+          echo "This step will succeed"
+          exit 0
