@@ -20,3 +20,4 @@ jobs:
 
       - name: Run Application
         run: python app.py
+        Je vais causer une erreur ici
