@@ -20,3 +20,9 @@ jobs:
 
       - name: Run Application
         run: python app.py
+
+      # erreur volontaire
+      - name: Run Failing Command
+        run: |
+          echo "This command will fail"
+          exit 1
