@@ -4,6 +4,7 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
+    branches: [ "main" ]
 
 jobs:
   test-failure:
@@ -16,3 +17,4 @@ jobs:
       - name: Run a test command
         run: |
           echo "This step will fail"
+          exit 1
