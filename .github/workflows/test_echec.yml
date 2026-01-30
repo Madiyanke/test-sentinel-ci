@@ -15,5 +15,6 @@ jobs:
 
       - name: Run a test command
         run: |
-          echo "This step will succeed"
+          echo "This step will failure"
           exit 1
+          
