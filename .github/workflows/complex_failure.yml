@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests  # On oublie délibérément pandas !
+          pip install requests pandas
 
       - name: Run Application
         run: python app.py
